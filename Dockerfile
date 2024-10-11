@@ -7,8 +7,6 @@ RUN apt-get update && apt-get install -y \
     libyaml-dev\
     git
 
-RUN pip3 install cython wheel
-
 RUN pip3 install PyYAML --break-system-packages
 
 COPY feed.py /usr/bin/feed.py
