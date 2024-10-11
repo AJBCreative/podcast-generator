@@ -2,10 +2,12 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
     python3-full\
-    python3-pip \
-    build-essential \
-    libyaml-dev \
+    python3-pip\
+    build-essential\
+    libyaml-dev\
     git
+
+RUN pip4 install cython wheel
 
 RUN pip3 install PyYAML
 
